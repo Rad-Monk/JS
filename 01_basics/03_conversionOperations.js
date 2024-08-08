@@ -77,6 +77,6 @@ let s3 = "Eve <3"
 // console.log(+1)
 
 let gameCounter = 5
-console.log(++gameCounter)
-console.log(gameCounter++)
-console.log(gameCounter)
+// console.log(++gameCounter)
+// console.log(gameCounter++)
+// console.log(gameCounter)
