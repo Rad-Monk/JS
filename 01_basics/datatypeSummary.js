@@ -26,3 +26,21 @@ const myFunction= function greet(name){
     console.log("Hello "+name)
 }
 
+
+///////////////////////////////////// memory types ///////////////////////////////////////
+
+// Stack: all primitive types fall under stack memory, which also means we get a copy from this
+
+let name1 = "Rad"
+let name2 = name1
+name1 = "Eve"
+console.log(name1) // Eve
+console.log(name2) // Rad
+
+// Heap: all non-primitive types fall under heap memory, here we get reference to original value for changing
+
+let person1 = {name: "Rad", age: 21}
+let person2 = person1
+person1.name = "Eve"
+console.log(person1) // {name: "Eve", age: 21}
+console.log(person2) // {name: "Eve", age: 21}
