@@ -48,7 +48,23 @@ const users = [
 ]
 // console.log(users[1].name)
 
-console.log(user)
-console.log(Object.keys(user))
-console.log(Object.values(user))
-console.log(Object.entries(user))
+// console.log(user)
+// console.log(Object.keys(user))
+// console.log(Object.values(user))
+// console.log(Object.entries(user))
+
+
+const course = {
+    coursename: "JS",
+    price:  '999',
+    modules:{
+        m1: "Basics",
+        m2: "Advanced"   
+    },
+    instructor: "Rad Monk"
+}
+
+const {coursename: cname, price, modules: {m1, m2}, instructor} = course
+// console.log(cname, price, m1, m2, instructor)
+
+
